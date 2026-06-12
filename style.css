@@ -308,6 +308,33 @@ footer {
   cursor: default;
 }
 
+/* ---- Project skeleton loader ---- */
+.project-skeleton {
+  border-top: 1px solid var(--border);
+  padding: 1.75rem 0;
+}
+
+.project-skeleton:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.project-skeleton span {
+  display: block;
+  height: 1.4rem;
+  width: 40%;
+  border-radius: 2px;
+  background: var(--border);
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+.project-skeleton:nth-child(2) span { width: 55%; animation-delay: 0.2s; }
+.project-skeleton:nth-child(3) span { width: 30%; animation-delay: 0.4s; }
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 1; }
+}
+
 /* ---- Reveal animations ---- */
 .reveal {
   opacity: 0;

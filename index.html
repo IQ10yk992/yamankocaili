@@ -6,35 +6,42 @@
   <title>Yaman Kocaili</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header id="header">
     <span class="nav-logo">YK</span>
-    <button id="lang-toggle">EN</button>
+    <button id="lang-toggle" aria-label="Dil değiştir">EN</button>
   </header>
 
+  <!-- Section 1: Hero -->
   <section id="hero">
     <div class="hero-inner">
-      <h1 class="hero-name reveal">
-        Yaman<br>Kocaili
+      <h1 class="hero-name">
+        <span class="line reveal">Yaman</span>
+        <span class="line reveal reveal-d1">Kocaili</span>
       </h1>
-      <p class="hero-sub reveal reveal-d1"
+      <p class="hero-sub reveal reveal-d2"
          data-tr="Yazılım geliştirici."
          data-en="Software developer.">
         Yazılım geliştirici.
       </p>
     </div>
-    <div class="scroll-indicator">
-      <div class="scroll-line"></div>
+
+    <div class="scroll-cue">
+      <span class="scroll-label reveal reveal-d3"
+            data-tr="kaydır"
+            data-en="scroll">kaydır</span>
+      <div class="scroll-bar"></div>
     </div>
   </section>
 
+  <!-- Section 2: Projects -->
   <section id="projects">
-    <div class="container">
-      <p class="label reveal"
+    <div class="projects-inner">
+      <p class="section-label reveal"
          data-tr="Projeler"
          data-en="Projects">
         Projeler
@@ -45,29 +52,30 @@
         <li class="skel"><span></span></li>
       </ul>
     </div>
-  </section>
 
-  <section id="contact">
-    <div class="container">
-      <p class="label reveal"
-         data-tr="Bağlantı"
-         data-en="Connect">
-        Bağlantı
-      </p>
-      <div class="contact-links reveal reveal-d1">
-        <a href="https://instagram.com/yamankocaili" target="_blank" rel="noopener" class="clink">
-          <span>Instagram</span><span class="arr">&#8599;</span>
-        </a>
-        <a href="https://github.com/IQ10yk992" target="_blank" rel="noopener" class="clink">
-          <span>GitHub</span><span class="arr">&#8599;</span>
-        </a>
-      </div>
+    <!-- Corner social links -->
+    <div class="social-corner">
+      <a href="https://www.instagram.com/yamankocaili"
+         target="_blank" rel="noopener" aria-label="Instagram">
+        <!-- Instagram icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/>
+          <circle cx="12" cy="12" r="4.2"/>
+          <circle cx="17.4" cy="6.6" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a href="https://linktr.ee/yamankocaili"
+         target="_blank" rel="noopener" aria-label="Linktree">
+        <!-- Linktree icon (stylised tree branches) -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21v-9"/>
+          <path d="M7.5 8.5 12 12.5l4.5-4"/>
+          <path d="M5 6h14"/>
+          <path d="M7 3.5h10"/>
+        </svg>
+      </a>
     </div>
   </section>
-
-  <footer>
-    <span>Yaman Kocaili</span>
-  </footer>
 
   <script src="main.js"></script>
 </body>

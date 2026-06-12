@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 /* ---- Reset & Base ---- */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -30,9 +32,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
-
-/* ---- Typography ---- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 /* ---- Scrollbar ---- */
 ::-webkit-scrollbar { width: 4px; }
@@ -153,6 +152,12 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 1s var(--ease) 1s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 
 .scroll-line {
